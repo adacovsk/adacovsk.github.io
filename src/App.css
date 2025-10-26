@@ -6,7 +6,10 @@
 
 .app {
   min-height: 100vh;
+  width: 100%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -57,8 +60,8 @@
 
 /* Main Content */
 .main-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  flex: 1;
+  width: 100%;
   padding: 2rem;
 }
 
