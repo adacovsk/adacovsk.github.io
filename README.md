@@ -1,16 +1,59 @@
-# React + Vite
+# Adam Acovski - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing professional experience in hydrogeological engineering and software development.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [adacovsk.github.io](https://adacovsk.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React 19 + Vite
+- GitHub Pages deployment
+- GitHub Actions for CI/CD
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Editing Content
 
-## Expanding the ESLint configuration
+All portfolio content is stored in `src/content.json`. To update your portfolio:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Open `src/content.json`
+2. Edit the text directly - it's organized into sections:
+   - `home` - Landing page content
+   - `resume` - Experience, education, skills, certifications
+   - `projects` - Professional and personal projects
+3. Commit and push - GitHub Actions will automatically build and deploy
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+# Open http://localhost:5173
+
+# Build for production
+npm run build
+```
+
+## Deployment
+
+This site deploys automatically via GitHub Actions on every push to `main`:
+- Builds the React app with Vite
+- Deploys to GitHub Pages
+- Usually live within 1-2 minutes
+
+## Project Structure
+
+```
+src/
+  ├── content.json      # All portfolio text content (edit this!)
+  ├── App.jsx           # React components
+  ├── App.css           # Styling
+  └── main.jsx          # Entry point
+```
+
+## Notes
+
+- The site uses a JSON content file for easy text updates
+- No need to touch React code to update content
+- GitHub Pages is configured to use GitHub Actions (not branch deployment)
