@@ -50,15 +50,6 @@ function Home() {
           <a href="https://www.linkedin.com/in/adam-acovski-3625521a6" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = 'mailto:' + ['adacovsk', 'gmail.com'].join('@');
-            }}
-          >
-            Email
-          </a>
         </div>
       </div>
     </div>
