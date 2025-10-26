@@ -36,17 +36,28 @@ function Home() {
   return (
     <div className="home">
       <div className="hero">
-        <h1>Welcome</h1>
-        <p className="tagline">Software Developer | Tech Enthusiast</p>
+        <h1>Adam Acovski</h1>
+        <p className="tagline">Hydrogeological Engineer | Software Developer</p>
         <p className="intro">
-          Hi, I'm adacovsk. I build things and solve problems with code.
+          Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis,
+          and automation-driven workflows. Combining technical expertise in numerical modeling with modern
+          software engineering practices to deliver scalable, reproducible analyses.
         </p>
         <div className="links">
           <a href="https://github.com/adacovsk" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/adacovsk" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/adam-acovski-3625521a6" target="_blank" rel="noopener noreferrer">
             LinkedIn
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = 'mailto:' + ['adacovsk', 'gmail.com'].join('@');
+            }}
+          >
+            Email
           </a>
         </div>
       </div>
@@ -60,15 +71,46 @@ function Resume() {
       <h1>Resume</h1>
 
       <section className="resume-section">
+        <h2>Summary</h2>
+        <p>
+          Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis,
+          and automation-driven workflows. Combines technical expertise in numerical modeling with modern
+          software engineering practices to deliver scalable, reproducible analyses. Experience spans
+          mining consulting with focus on dewatering assessments, uncertainty quantification, and model calibration.
+        </p>
+      </section>
+
+      <section className="resume-section">
         <h2>Experience</h2>
+
         <div className="experience-item">
-          <h3>Software Developer</h3>
-          <p className="company">Company Name</p>
-          <p className="date">2023 - Present</p>
+          <h3>Project Hydrogeologist</h3>
+          <p className="company">ITASCA Consulting</p>
+          <p className="date">July 2024 - Present</p>
+          <p className="location">Lakewood, Colorado, United States</p>
           <ul>
-            <li>Developed and maintained web applications</li>
-            <li>Collaborated with cross-functional teams</li>
-            <li>Implemented new features and improvements</li>
+            <li>Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility</li>
+            <li>Built scalable data processing pipelines for spatial-temporal monitoring datasets</li>
+            <li>Developed Python-based interactive dashboards for decision support and investigations</li>
+            <li>Containerized environments with Docker for deployment to VPN-accessible servers</li>
+            <li>Established CI/CD pipelines with unit testing to prevent regressions during script refactoring</li>
+            <li>Automated technical documentation deployment to AWS S3 for version-controlled distribution</li>
+          </ul>
+        </div>
+
+        <div className="experience-item">
+          <h3>Groundwater Modeller</h3>
+          <p className="company">SNC-Lavalin</p>
+          <p className="date">November 2012 - April 2020</p>
+          <p className="location">Saskatoon, Saskatchewan, Canada</p>
+          <ul>
+            <li>Optimized well field configurations for brine disposal into the Winnipeg-Deadwood formation using analytical and numerical simulations with fracture gradient modeling</li>
+            <li>Calibrated complex hydrogeological models using PEST for parameter estimation for predictive simulation</li>
+            <li>Developed custom FEFLOW plug-ins in C++ for geological modeling and mesh generation, including shapefile import with Delaunay triangulation constraint handling</li>
+            <li>Performed particle-tracking simulations for uranium mine decommissioning to assess contaminant migration and inform remediation strategies</li>
+            <li>Authored technical reports translating complex modeling results for Environmental Impact Assessments (EIAs)</li>
+            <li>Designed, built, and maintained custom HPC workstations optimized for simulation applications</li>
+            <li>Managed procurement of hardware, software, and networking equipment for cost-effective technology solutions</li>
           </ul>
         </div>
       </section>
@@ -76,22 +118,85 @@ function Resume() {
       <section className="resume-section">
         <h2>Education</h2>
         <div className="education-item">
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p className="school">University Name</p>
-          <p className="date">2019 - 2023</p>
+          <h3>Bachelor of Applied Science (BASc)</h3>
+          <p className="school">University of Waterloo</p>
+          <p className="major">Environmental/Environmental Health Engineering</p>
+          <p className="date">2007 - 2012</p>
         </div>
       </section>
 
       <section className="resume-section">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          <span className="skill-tag">Python</span>
-          <span className="skill-tag">JavaScript</span>
-          <span className="skill-tag">React</span>
-          <span className="skill-tag">Rust</span>
-          <span className="skill-tag">Git</span>
-          <span className="skill-tag">Linux</span>
+        <h2>Technical Skills</h2>
+        <div className="skills-category">
+          <h4>Modeling & Simulation</h4>
+          <div className="skills-grid">
+            <span className="skill-tag">MODFLOW</span>
+            <span className="skill-tag">flopy</span>
+            <span className="skill-tag">FEFLOW</span>
+            <span className="skill-tag">MINEDW</span>
+            <span className="skill-tag">SEEP/W</span>
+            <span className="skill-tag">ModelMuse</span>
+            <span className="skill-tag">Groundwater Vistas</span>
+            <span className="skill-tag">PEST</span>
+          </div>
         </div>
+        <div className="skills-category">
+          <h4>Programming & Data Analysis</h4>
+          <div className="skills-grid">
+            <span className="skill-tag">Python</span>
+            <span className="skill-tag">Pandas</span>
+            <span className="skill-tag">NumPy</span>
+            <span className="skill-tag">SciPy</span>
+            <span className="skill-tag">C++</span>
+            <span className="skill-tag">Rust</span>
+            <span className="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div className="skills-category">
+          <h4>Visualization</h4>
+          <div className="skills-grid">
+            <span className="skill-tag">Matplotlib</span>
+            <span className="skill-tag">Seaborn</span>
+            <span className="skill-tag">PyVista</span>
+            <span className="skill-tag">Plotly/Dash</span>
+          </div>
+        </div>
+        <div className="skills-category">
+          <h4>DevOps & Infrastructure</h4>
+          <div className="skills-grid">
+            <span className="skill-tag">Docker</span>
+            <span className="skill-tag">CI/CD</span>
+            <span className="skill-tag">Git</span>
+            <span className="skill-tag">AWS S3</span>
+          </div>
+        </div>
+        <div className="skills-category">
+          <h4>Other</h4>
+          <div className="skills-grid">
+            <span className="skill-tag">QGIS</span>
+            <span className="skill-tag">PostgreSQL</span>
+            <span className="skill-tag">Scikit-learn</span>
+            <span className="skill-tag">PyTorch</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="resume-section">
+        <h2>Projects</h2>
+        <div className="experience-item">
+          <h3>Pathfinder 2e RPG Game</h3>
+          <p className="date">November 2021 - Present</p>
+          <ul>
+            <li>Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy</li>
+            <li>Built procedural generation pipelines using Voronoi diagrams and Perlin noise for terrain, with AI pathfinding for NPCs</li>
+            <li>Optimized system performance and scalability for large, dynamic game worlds</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="resume-section">
+        <h2>Certifications</h2>
+        <p>MSHA (Mine Safety and Health Administration) Training</p>
       </section>
     </div>
   )
