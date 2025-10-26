@@ -183,6 +183,17 @@ function Resume() {
 
       <section className="resume-section">
         <h2>Projects</h2>
+
+        <div className="experience-item">
+          <h3>Freelance Game Development</h3>
+          <p className="date">2020 - Present</p>
+          <ul>
+            <li>Developed custom gameplay systems and features for multiplayer game projects</li>
+            <li>Implemented server-side logic, game mechanics, and player interactions</li>
+            <li>Collaborated with communities to design and iterate on game features based on user feedback</li>
+          </ul>
+        </div>
+
         <div className="experience-item">
           <h3>Pathfinder 2e RPG Game</h3>
           <p className="date">November 2021 - Present</p>
