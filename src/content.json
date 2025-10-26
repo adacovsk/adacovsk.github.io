@@ -1,0 +1,126 @@
+{
+  "home": {
+    "name": "Adam Acovski",
+    "tagline": "Hydrogeological Engineer | Software Developer",
+    "intro": "Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis, and automation-driven workflows. Combining technical expertise in numerical modeling with modern software engineering practices to deliver scalable, reproducible analyses.",
+    "links": [
+      { "text": "GitHub", "url": "https://github.com/adacovsk" },
+      { "text": "LinkedIn", "url": "https://www.linkedin.com/in/adam-acovski-3625521a6" }
+    ]
+  },
+  "resume": {
+    "summary": "Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis, and automation-driven workflows. Combines technical expertise in numerical modeling with modern software engineering practices to deliver scalable, reproducible analyses. Experience spans mining consulting with focus on dewatering assessments, uncertainty quantification, and model calibration.",
+    "experience": [
+      {
+        "title": "Project Hydrogeologist",
+        "company": "ITASCA Consulting",
+        "location": "Lakewood, Colorado, United States",
+        "date": "July 2024 - Present",
+        "bullets": [
+          "Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility",
+          "Built scalable data processing pipelines for spatial-temporal monitoring datasets",
+          "Developed Python-based interactive dashboards for decision support and investigations",
+          "Containerized environments with Docker for deployment to VPN-accessible servers",
+          "Established CI/CD pipelines with unit testing to prevent regressions during script refactoring",
+          "Automated technical documentation deployment to AWS S3 for version-controlled distribution"
+        ]
+      },
+      {
+        "title": "Groundwater Modeller",
+        "company": "SNC-Lavalin",
+        "location": "Saskatoon, Saskatchewan, Canada",
+        "date": "November 2012 - April 2020",
+        "bullets": [
+          "Optimized well field configurations for brine disposal into the Winnipeg-Deadwood formation using analytical and numerical simulations with fracture gradient modeling",
+          "Calibrated complex hydrogeological models using PEST for parameter estimation for predictive simulation",
+          "Developed custom FEFLOW plug-ins in C++ for geological modeling and mesh generation, including shapefile import with Delaunay triangulation constraint handling",
+          "Performed particle-tracking simulations for uranium mine decommissioning to assess contaminant migration and inform remediation strategies",
+          "Authored technical reports translating complex modeling results for Environmental Impact Assessments (EIAs)",
+          "Designed, built, and maintained custom HPC workstations optimized for simulation applications",
+          "Managed procurement of hardware, software, and networking equipment for cost-effective technology solutions"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Bachelor of Applied Science (BASc)",
+      "school": "University of Waterloo",
+      "major": "Environmental/Environmental Health Engineering",
+      "date": "2007 - 2012"
+    },
+    "skills": {
+      "Modeling & Simulation": ["MODFLOW", "flopy", "FEFLOW", "MINEDW", "SEEP/W", "ModelMuse", "Groundwater Vistas", "PEST"],
+      "Programming & Data Analysis": ["Python", "Pandas", "NumPy", "SciPy", "C++", "Rust", "SQL"],
+      "Visualization": ["Matplotlib", "Seaborn", "PyVista", "Plotly/Dash"],
+      "DevOps & Infrastructure": ["Docker", "CI/CD", "Git", "AWS S3"],
+      "Other": ["QGIS", "PostgreSQL", "Scikit-learn", "PyTorch"]
+    },
+    "certifications": ["MSHA (Mine Safety and Health Administration) Training"]
+  },
+  "projects": {
+    "professional": [
+      {
+        "title": "Groundwater Modeling Automation Framework",
+        "date": "2024 - Present",
+        "bullets": [
+          "Built end-to-end automation pipelines for MODFLOW pre-processing and post-processing using Python and flopy",
+          "Reduced manual modeling workflow time by automating data preparation, mesh generation, and results extraction",
+          "Implemented version control and unit testing for modeling scripts to ensure reproducibility across projects",
+          "Technologies: Python, flopy, MODFLOW, Git, pytest"
+        ]
+      },
+      {
+        "title": "Interactive Monitoring Dashboards",
+        "date": "2024 - Present",
+        "bullets": [
+          "Developed web-based dashboards for real-time groundwater monitoring data visualization and analysis",
+          "Built interactive tools for decision support during hydrogeological investigations",
+          "Deployed containerized applications to VPN-accessible servers for client access",
+          "Technologies: Python, Plotly, Dash, Docker, PostgreSQL"
+        ]
+      },
+      {
+        "title": "Spatial-Temporal Data Processing Pipeline",
+        "date": "2024 - Present",
+        "bullets": [
+          "Created scalable ETL pipelines for processing large monitoring datasets with spatial and temporal components",
+          "Integrated GIS data processing with time-series analysis for hydrogeological applications",
+          "Automated quality control checks and data validation workflows",
+          "Technologies: Python, Pandas, QGIS, GeoPandas"
+        ]
+      },
+      {
+        "title": "FEFLOW Custom Plugins for Advanced Geological Modeling",
+        "date": "2012 - 2020",
+        "bullets": [
+          "Architected and developed custom C++ plugins extending FEFLOW's core functionality for complex 3D geological modeling and adaptive mesh generation",
+          "Implemented GIS integration with shapefile import capabilities, including advanced Delaunay triangulation with constraint handling for geological boundaries and fault structures",
+          "Built automated mesh refinement algorithms that preserved geological layer boundaries while optimizing element quality for numerical stability",
+          "Enabled modeling of complex multi-layer aquifer systems, fault zones, and heterogeneous geological formations for water sourcing and resource assessment projects",
+          "Reduced model setup time from weeks to days by automating geological structure interpretation and mesh generation workflows",
+          "Technologies: C++, FEFLOW API, computational geometry algorithms, GIS data formats, object-oriented design patterns"
+        ]
+      }
+    ],
+    "personal": [
+      {
+        "title": "Pathfinder 2e RPG Game",
+        "date": "November 2023 - Present",
+        "bullets": [
+          "Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy",
+          "Built procedural generation pipelines using Voronoi diagrams and Perlin noise for terrain, with AI pathfinding for NPCs",
+          "Optimized system performance and scalability for large, dynamic game worlds",
+          "Technologies: Rust, Bevy game engine, procedural generation algorithms"
+        ]
+      },
+      {
+        "title": "Freelance Game Development",
+        "date": "2020 - Present",
+        "bullets": [
+          "Developed custom gameplay systems and features for multiplayer game projects",
+          "Implemented server-side logic, game mechanics, and player interactions",
+          "Collaborated with communities to design and iterate on game features based on user feedback"
+        ]
+      }
+    ]
+  }
+}
