@@ -60,7 +60,7 @@
     "professional": [
       {
         "title": "Groundwater Modeling Automation Framework",
-        "date": "2024 - Present",
+        "date": "July 2024 - Present",
         "bullets": [
           "Built end-to-end automation pipelines for MODFLOW pre-processing and post-processing using Python and flopy",
           "Reduced manual modeling workflow time by automating data preparation, mesh generation, and results extraction",
@@ -70,7 +70,7 @@
       },
       {
         "title": "Interactive Monitoring Dashboards",
-        "date": "2024 - Present",
+        "date": "July 2024 - Present",
         "bullets": [
           "Developed web-based dashboards for real-time groundwater monitoring data visualization and analysis",
           "Built interactive tools for decision support during hydrogeological investigations",
@@ -80,7 +80,7 @@
       },
       {
         "title": "Spatial-Temporal Data Processing Pipeline",
-        "date": "2024 - Present",
+        "date": "July 2024 - Present",
         "bullets": [
           "Created scalable ETL pipelines for processing large monitoring datasets with spatial and temporal components",
           "Integrated GIS data processing with time-series analysis for hydrogeological applications",
@@ -90,7 +90,7 @@
       },
       {
         "title": "FEFLOW Custom Plugins for Advanced Geological Modeling",
-        "date": "2012 - 2020",
+        "date": "November 2012 - April 2020",
         "bullets": [
           "Architected and developed custom C++ plugins extending FEFLOW's core functionality for complex 3D geological modeling and adaptive mesh generation",
           "Implemented GIS integration with shapefile import capabilities, including advanced Delaunay triangulation with constraint handling for geological boundaries and fault structures",
@@ -104,7 +104,7 @@
     "personal": [
       {
         "title": "RPG Game Engine",
-        "date": "November 2023 - Present",
+        "date": "November 2024 - Present",
         "bullets": [
           "Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy",
           "Built procedural generation pipelines using Voronoi diagrams and Perlin noise for terrain, with AI pathfinding for NPCs",
@@ -114,7 +114,7 @@
       },
       {
         "title": "Freelance Game Development",
-        "date": "2020 - Present",
+        "date": "November 2021 - 2023",
         "bullets": [
           "Developed custom gameplay systems and features for multiplayer game projects",
           "Implemented server-side logic, game mechanics, and player interactions",
