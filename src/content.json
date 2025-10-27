@@ -103,7 +103,7 @@
     ],
     "personal": [
       {
-        "title": "Pathfinder 2e RPG Game",
+        "title": "RPG Game Engine",
         "date": "November 2023 - Present",
         "bullets": [
           "Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy",
