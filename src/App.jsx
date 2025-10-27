@@ -1,42 +1,72 @@
-import { useState } from 'react'
+import { useState, Component } from 'react'
 import './App.css'
 import content from './content.json'
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('Error caught by boundary:', error, errorInfo)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="error-boundary">
+          <h1>Something went wrong</h1>
+          <p>Please refresh the page or contact me if the problem persists.</p>
+        </div>
+      )
+    }
+
+    return this.props.children
+  }
+}
 
 function App() {
   const [activeTab, setActiveTab] = useState('home')
 
   return (
-    <div className="app">
-      <nav className="navbar">
-        <h1 className="logo">adacovsk</h1>
-        <div className="nav-links">
-          <button
-            className={activeTab === 'home' ? 'active' : ''}
-            onClick={() => setActiveTab('home')}
-          >
-            Home
-          </button>
-          <button
-            className={activeTab === 'resume' ? 'active' : ''}
-            onClick={() => setActiveTab('resume')}
-          >
-            Resume
-          </button>
-          <button
-            className={activeTab === 'projects' ? 'active' : ''}
-            onClick={() => setActiveTab('projects')}
-          >
-            Projects
-          </button>
-        </div>
-      </nav>
+    <ErrorBoundary>
+      <div className="app">
+        <nav className="navbar">
+          <h1 className="logo">adacovsk</h1>
+          <div className="nav-links">
+            <button
+              className={activeTab === 'home' ? 'active' : ''}
+              onClick={() => setActiveTab('home')}
+            >
+              Home
+            </button>
+            <button
+              className={activeTab === 'resume' ? 'active' : ''}
+              onClick={() => setActiveTab('resume')}
+            >
+              Resume
+            </button>
+            <button
+              className={activeTab === 'projects' ? 'active' : ''}
+              onClick={() => setActiveTab('projects')}
+            >
+              Projects
+            </button>
+          </div>
+        </nav>
 
-      <main className="main-content">
-        {activeTab === 'home' && <Home />}
-        {activeTab === 'resume' && <Resume />}
-        {activeTab === 'projects' && <Projects />}
-      </main>
-    </div>
+        <main className="main-content">
+          {activeTab === 'home' && <Home />}
+          {activeTab === 'resume' && <Resume />}
+          {activeTab === 'projects' && <Projects />}
+        </main>
+      </div>
+    </ErrorBoundary>
   )
 }
 
