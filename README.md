@@ -12,7 +12,7 @@ Personal portfolio website showcasing professional experience in hydrogeological
 
 ## Editing Content
 
-All portfolio content is stored in `src/content.json`. To update your portfolio:
+All portfolio content is stored in `src/content.json`. To update the portfolio:
 
 1. Open `src/content.json`
 2. Edit the text directly - it's organized into sections:
@@ -42,18 +42,7 @@ This site deploys automatically via GitHub Actions on every push to `main`:
 - Deploys to GitHub Pages
 - Usually live within 1-2 minutes
 
-## Project Structure
-
-```
-src/
-  ├── content.json      # All portfolio text content (edit this!)
-  ├── App.jsx           # React components
-  ├── App.css           # Styling
-  └── main.jsx          # Entry point
-```
-
 ## Notes
 
 - The site uses a JSON content file for easy text updates
-- No need to touch React code to update content
 - GitHub Pages is configured to use GitHub Actions (not branch deployment)
