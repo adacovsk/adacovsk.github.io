@@ -92,7 +92,12 @@ function Home() {
 function Resume() {
   return (
     <div className="resume">
-      <h1>Resume</h1>
+      <div className="resume-header">
+        <h1>Resume</h1>
+        <a href="/resume.pdf" download="Adam_Acovski_Resume.pdf" className="download-btn">
+          Download PDF
+        </a>
+      </div>
 
       <section className="resume-section">
         <h2>Summary</h2>
