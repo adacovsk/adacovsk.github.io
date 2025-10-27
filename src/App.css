@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+/* Error Boundary */
+.error-boundary {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-boundary h1 {
+  color: #3b82f6;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error-boundary p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
 .app {
   min-height: 100vh;
   width: 100%;
