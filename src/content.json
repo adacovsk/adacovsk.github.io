@@ -34,7 +34,7 @@
         "bullets": [
           "Optimized well field configurations for brine disposal into the Winnipeg-Deadwood formation using analytical and numerical simulations with fracture gradient modeling",
           "Calibrated complex hydrogeological models using PEST for parameter estimation for predictive simulation",
-          "Developed custom FEFLOW plug-ins in C++ for geological modeling and mesh generation, including shapefile import with Delaunay triangulation constraint handling",
+          "Developed custom FEFLOW plug-ins in C++ for geological modeling and mesh generation",
           "Performed particle-tracking simulations for uranium mine decommissioning to assess contaminant migration and inform remediation strategies",
           "Authored technical reports translating complex modeling results for Environmental Impact Assessments (EIAs)",
           "Designed, built, and maintained custom HPC workstations optimized for simulation applications",
@@ -73,7 +73,7 @@
         "title": "Interactive Monitoring Dashboards",
         "date": "July 2024 - Present",
         "bullets": [
-          "Developed web-based dashboards for real-time groundwater monitoring data visualization and analysis",
+          "Developed web-based dashboards for groundwater monitoring data visualization and analysis",
           "Built interactive tools for decision support during hydrogeological investigations",
           "Deployed containerized applications to VPN-accessible servers for client access",
           "Technologies: Python, Plotly, Dash, Docker, PostgreSQL"
