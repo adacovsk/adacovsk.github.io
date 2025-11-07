@@ -147,6 +147,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .links a:hover {
