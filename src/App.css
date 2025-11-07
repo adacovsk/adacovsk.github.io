@@ -72,6 +72,7 @@
   transition: all 0.3s ease;
   color: #94a3b8;
   font-weight: 500;
+  flex: 1;
 }
 
 .nav-links button:hover {
