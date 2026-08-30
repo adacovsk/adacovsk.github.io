@@ -13,10 +13,23 @@
     "summary": "Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis, and automation-driven workflows. Combines technical expertise in numerical modeling with modern software engineering practices to deliver scalable, reproducible analyses. Experience spans mining consulting with focus on dewatering assessments, uncertainty quantification, and model calibration.",
     "experience": [
       {
+        "title": "Consultant (Hydrogeology)",
+        "company": "SRK Consulting",
+        "location": "Lakewood, Colorado, United States",
+        "date": "June 2026 - Present",
+        "bullets": [
+          "Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility",
+          "Built scalable data processing pipelines for spatial-temporal monitoring datasets",
+          "Developed Python-based interactive dashboards for decision support and investigations using DuckDB and DuckLake",
+          "Containerized environments with Docker for deployment to VPN-accessible servers",
+          "Established CI/CD pipelines with unit testing"
+        ]
+      },
+      {
         "title": "Project Hydrogeologist",
         "company": "ITASCA Consulting",
         "location": "Lakewood, Colorado, United States",
-        "date": "July 2024 - Present",
+        "date": "July 2024 - May 2026",
         "bullets": [
           "Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility",
           "Built scalable data processing pipelines for spatial-temporal monitoring datasets",
