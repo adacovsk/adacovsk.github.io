@@ -62,11 +62,11 @@
       "date": "2007 - 2012"
     },
     "skills": {
-      "Modeling & Simulation": ["MODFLOW", "flopy", "FEFLOW", "MINEDW", "SEEP/W", "ModelMuse", "Groundwater Vistas", "PEST++", "IES"],
+      "Modeling & Simulation": ["MODFLOW", "FloPy", "FEFLOW", "PEST++"],
       "Programming & Data Analysis": ["Python", "Pandas", "NumPy", "SciPy", "C++", "Rust", "SQL"],
       "Visualization": ["Matplotlib", "PyVista", "Plotly", "React"],
       "DevOps & Infrastructure": ["Docker", "CI/CD", "Git", "GCP", "AWS", "Pulumi"],
-      "Other": ["QGIS", "PostgreSQL", "Scikit-learn", "PyTorch"]
+      "Other": ["QGIS", "SQL", "Scikit-learn", "PyTorch", "DuckDB", "DuckLake"]
     },
     "certifications": ["MSHA (Mine Safety and Health Administration) Training"]
   },
