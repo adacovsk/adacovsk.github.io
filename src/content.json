@@ -74,7 +74,7 @@
     "professional": [
       {
         "title": "Groundwater Modeling Automation Framework",
-        "date": "July 2024 - August 2026",
+        "date": "July 2024 - June 2026",
         "bullets": [
           "Built end-to-end automation pipelines for MODFLOW pre-processing and post-processing using Python and flopy",
           "Reduced manual modeling workflow time by automating data preparation, mesh generation, and results extraction",
