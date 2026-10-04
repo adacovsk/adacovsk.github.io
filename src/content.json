@@ -64,7 +64,7 @@
     "skills": {
       "Modeling & Simulation": ["MODFLOW", "FloPy", "FEFLOW", "PEST++"],
       "Programming & Data Analysis": ["Python", "Pandas", "NumPy", "SciPy", "C++", "Rust", "SQL"],
-      "Visualization": ["Matplotlib", "PyVista", "Plotly", "React"],
+      "Visualization": ["Matplotlib", "Plotly", "React"],
       "DevOps & Infrastructure": ["Docker", "CI/CD", "Git", "GCP", "AWS", "Pulumi"],
       "Other": ["QGIS", "SQL", "Scikit-learn", "PyTorch", "DuckDB", "DuckLake"]
     },
