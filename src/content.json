@@ -74,7 +74,7 @@
     "professional": [
       {
         "title": "Groundwater Modeling Automation Framework",
-        "date": "July 2024 - Present",
+        "date": "July 2024 - August 2026",
         "bullets": [
           "Built end-to-end automation pipelines for MODFLOW pre-processing and post-processing using Python and flopy",
           "Reduced manual modeling workflow time by automating data preparation, mesh generation, and results extraction",
@@ -84,7 +84,7 @@
       },
       {
         "title": "Interactive Monitoring Dashboards",
-        "date": "July 2024 - Present",
+        "date": "July 2024 - August 2026",
         "bullets": [
           "Developed web-based dashboards for groundwater monitoring data visualization and analysis",
           "Built interactive tools for decision support during hydrogeological investigations",
@@ -94,7 +94,7 @@
       },
       {
         "title": "Spatial-Temporal Data Processing Pipeline",
-        "date": "July 2024 - Present",
+        "date": "July 2024 - August 2026",
         "bullets": [
           "Created scalable ETL pipelines for processing large monitoring datasets with spatial and temporal components",
           "Integrated GIS data processing with time-series analysis for hydrogeological applications",
@@ -125,8 +125,8 @@
         ]
       },
       {
-        "title": "Pathfinder 2e RPG Game",
-        "date": "July 2024 - Present",
+        "title": "Roguelike CRPG",
+        "date": "July 2024 - August 2026",
         "bullets": [
           "Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy",
           "Built procedural generation pipelines using Voronoi diagrams and Perlin noise for terrain, with AI pathfinding for NPCs",
