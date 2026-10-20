@@ -34,15 +34,3 @@ npm run dev
 # Build for production
 npm run build
 ```
-
-## Deployment
-
-This site deploys automatically via GitHub Actions on every push to `main`:
-- Builds the React app with Vite
-- Deploys to GitHub Pages
-- Usually live within 1-2 minutes
-
-## Notes
-
-- The site uses a JSON content file for easy text updates
-- GitHub Pages is configured to use GitHub Actions (not branch deployment)
