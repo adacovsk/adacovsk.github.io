@@ -31,8 +31,7 @@
           "Work with exploration data in Leapfrog to inform conceptual hydrogeological models",
           "Design ETL pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
           "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
-          "Serve analytical results to project teams through FastAPI services and React front ends",
-          "Maintain CI/CD pipelines with automated testing for analytical code and deployments"
+          "Serve analytical results to project teams through FastAPI services and React front ends"
         ]
       },
       {
