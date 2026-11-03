@@ -83,6 +83,17 @@ function Home() {
               {link.text}
             </a>
           ))}
+          {content.home.email && (
+            // Assembled on click, so the address never appears in the HTML or as one
+            // string in the bundle, where scrapers look for it.
+            <a href="#" onClick={e => {
+              e.preventDefault()
+              const { user, domain } = content.home.email
+              window.location.href = 'mailto:' + user + String.fromCharCode(64) + domain
+            }}>
+              Email
+            </a>
+          )}
         </div>
       </div>
     </div>
