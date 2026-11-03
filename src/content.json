@@ -1,16 +1,25 @@
 {
   "home": {
     "name": "Adam Acovski",
-    "tagline": "Hydrogeological Engineer | Software Developer",
-    "intro": "Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis, and automation-driven workflows. Combining technical expertise in numerical modeling with modern software engineering practices to deliver scalable, reproducible analyses.",
+    "tagline": "Hydrogeologist | Data Engineer",
+    "intro": "Hydrogeologist and data engineer in Denver. I build calibrated groundwater models with rigorous uncertainty quantification, and the pipelines, APIs, and dashboards that put their results in front of the people making decisions.",
     "links": [
-      { "text": "Personal GitHub", "url": "https://github.com/adacovsk" },
-      { "text": "Work GitHub", "url": "https://github.com/aacovski" },
-      { "text": "LinkedIn", "url": "https://www.linkedin.com/in/adam-acovski-3625521a6" }
+      {
+        "text": "Personal GitHub",
+        "url": "https://github.com/adacovsk"
+      },
+      {
+        "text": "Work GitHub",
+        "url": "https://github.com/aacovski"
+      },
+      {
+        "text": "LinkedIn",
+        "url": "https://www.linkedin.com/in/adam-acovski-3625521a6"
+      }
     ]
   },
   "resume": {
-    "summary": "Hydrogeological engineer specializing in groundwater modeling, contaminant transport analysis, and automation-driven workflows. Combines technical expertise in numerical modeling with modern software engineering practices to deliver scalable, reproducible analyses. Experience spans mining consulting with focus on dewatering assessments, uncertainty quantification, and model calibration.",
+    "summary": "Data scientist and data engineer with nearly a decade of predictive modeling experience, specializing in Python/SQL and scalable data pipelines for environmental and groundwater problems. Builds calibrated predictive models with rigorous uncertainty quantification (PEST++, iterative ensemble smoothers) and the production systems behind them: ETL pipelines, lakehouse storage, APIs, cloud infrastructure, and CI/CD. Domain depth from mining and environmental consulting, including groundwater flow and contaminant transport modeling, dewatering assessments, and model calibration.",
     "experience": [
       {
         "title": "Consultant (Hydrogeology)",
@@ -18,11 +27,13 @@
         "location": "Lakewood, Colorado, United States",
         "date": "June 2026 - Present",
         "bullets": [
-          "Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility",
-          "Built scalable data processing pipelines for spatial-temporal monitoring datasets",
-          "Developed Python-based interactive dashboards for decision support and investigations using DuckDB and DuckLake",
-          "Containerized environments with Docker for deployment to VPN-accessible servers",
-          "Established CI/CD pipelines with unit testing"
+          "Develop conceptual and numerical groundwater models that predict mine-site flow conditions for engineering decisions",
+          "Work with exploration data in Leapfrog to inform conceptual hydrogeological models",
+          "QA/QC geochemistry data for errors, gaps, and inconsistencies before use in analysis and reporting",
+          "Design ETL and ELT pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
+          "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
+          "Serve analytical results to project teams through FastAPI services and React front ends",
+          "Maintain CI/CD pipelines with automated testing for analytical code and deployments"
         ]
       },
       {
@@ -31,12 +42,14 @@
         "location": "Lakewood, Colorado, United States",
         "date": "July 2024 - May 2026",
         "bullets": [
-          "Automated groundwater modeling pre-processing and post-processing workflows, reducing manual effort and improving project reproducibility",
-          "Built scalable data processing pipelines for spatial-temporal monitoring datasets",
-          "Developed Python-based interactive dashboards for decision support and investigations",
-          "Containerized environments with Docker for deployment to VPN-accessible servers",
-          "Established CI/CD pipelines with unit testing to prevent regressions during script refactoring",
-          "Automated technical documentation deployment to AWS S3 for version-controlled distribution"
+          "Calibrated transient groundwater models with FloPy and PEST++, using iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty quantification",
+          "Ran high-throughput ensemble simulations on GCP Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting ensemble run times from weeks to days",
+          "Automated conversion of transient 3D mine plans from non-native formats into MODFLOW 6 and MINEDW inputs, reducing a weeks-long manual task to seconds",
+          "Performed QA/QC on geochemistry and well data and delivered geochemistry visualizations, such as Piper plots, through project dashboards",
+          "Designed scheduled ETL pipelines that ingest groundwater-level, pumping, and water-quality monitoring data from on-prem and cloud sources, validate and normalize it into Cloud SQL, and give model calibration and client reporting a single source of truth",
+          "Structured pipelines so new wells, sites, and monitoring periods could be added without rework, keeping calibration inputs and reports consistent as datasets grew",
+          "Delivered curated pipeline outputs through React/Plotly dashboards on GCP Cloud Run with IAP authentication, supporting ~20 concurrent users across multiple firms on a single project",
+          "Provisioned infrastructure as code with Pulumi and Docker, with CI/CD through GitHub Actions and Cloud Build and documentation published to AWS S3"
         ]
       },
       {
@@ -45,13 +58,12 @@
         "location": "Saskatoon, Saskatchewan, Canada",
         "date": "November 2012 - April 2020",
         "bullets": [
-          "Optimized well field configurations for brine disposal into the Winnipeg-Deadwood formation using analytical and numerical simulations with fracture gradient modeling",
-          "Calibrated complex hydrogeological models using PEST for parameter estimation for predictive simulation",
-          "Developed custom FEFLOW plug-ins in C++ for geological modeling and mesh generation",
-          "Performed particle-tracking simulations for uranium mine decommissioning to assess contaminant migration and inform remediation strategies",
-          "Authored technical reports translating complex modeling results for Environmental Impact Assessments (EIAs)",
-          "Designed, built, and maintained custom HPC workstations optimized for simulation applications",
-          "Managed procurement of hardware, software, and networking equipment for cost-effective technology solutions"
+          "Calibrated ~20 numerical groundwater models with PEST, estimating parameters by fitting simulations to observed field data and validating model performance before use in forecasting",
+          "Optimized brine-disposal well-field configurations for the Winnipeg-Deadwood formation, using analytical and numerical models to forecast injection pressures and keep them below the fracture gradient",
+          "Developed C++ FEFLOW plug-ins for geological model construction and mesh generation, including shapefile import with constrained Delaunay triangulation, replacing spreadsheet workflows that took days with near-instant processing",
+          "Forecast long-term contaminant migration for uranium mine decommissioning using particle-tracking simulations, informing remediation strategies",
+          "Translated model forecasts into technical reports for Environmental Impact Assessments (EIAs)",
+          "Built and maintained HPC workstations for simulation workloads and managed hardware and software procurement"
         ]
       }
     ],
@@ -62,76 +74,127 @@
       "date": "2007 - 2012"
     },
     "skills": {
-      "Modeling & Simulation": ["MODFLOW", "FloPy", "FEFLOW", "PEST++"],
-      "Programming & Data Analysis": ["Python", "Pandas", "NumPy", "SciPy", "C++", "Rust", "SQL"],
-      "Visualization": ["Matplotlib", "Plotly", "React"],
-      "DevOps & Infrastructure": ["Docker", "CI/CD", "Git", "GCP", "AWS", "Pulumi"],
-      "Other": ["QGIS", "SQL", "Scikit-learn", "PyTorch", "DuckDB", "DuckLake"]
+      "Modeling & Statistics": [
+        "Bayesian inverse modeling",
+        "Iterative ensemble smoothers (IES)",
+        "Uncertainty quantification",
+        "Parameter estimation",
+        "scikit-learn",
+        "PyTorch"
+      ],
+      "Data Engineering": [
+        "ETL/ELT pipelines",
+        "Data modeling",
+        "PostgreSQL",
+        "Cloud SQL",
+        "DuckDB",
+        "DuckLake",
+        "FastAPI"
+      ],
+      "Languages": [
+        "Python",
+        "pandas",
+        "NumPy",
+        "SciPy",
+        "SQL",
+        "Rust",
+        "C++",
+        "Git"
+      ],
+      "Cloud & DevOps": [
+        "GCP",
+        "AWS",
+        "Pulumi",
+        "Docker",
+        "GitHub Actions",
+        "Cloud Build"
+      ],
+      "Visualization": [
+        "Plotly",
+        "React",
+        "Three.js",
+        "PyVista",
+        "QGIS"
+      ],
+      "Domain Tools": [
+        "Leapfrog",
+        "MODFLOW 6",
+        "FloPy",
+        "FEFLOW",
+        "MINEDW",
+        "PEST/PEST++"
+      ]
     },
-    "certifications": ["MSHA (Mine Safety and Health Administration) Training"]
+    "certifications": [
+      "MSHA Training (surface and underground metal/non-metal mining)"
+    ]
   },
   "projects": {
     "professional": [
       {
-        "title": "Groundwater Modeling Automation Framework",
-        "date": "July 2024 - June 2026",
+        "title": "Ensemble Calibration on GCP Spot Fleets",
+        "date": "July 2024 - May 2026",
         "bullets": [
-          "Built end-to-end automation pipelines for MODFLOW pre-processing and post-processing using Python and flopy",
-          "Reduced manual modeling workflow time by automating data preparation, mesh generation, and results extraction",
-          "Implemented version control and unit testing for modeling scripts to ensure reproducibility across projects",
-          "Technologies: Python, flopy, MODFLOW, Git, pytest"
+          "Calibrated transient MODFLOW 6 models with PEST++ iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty",
+          "Ran ensemble simulations on Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting run times from weeks to days",
+          "Technologies: Python, FloPy, MODFLOW 6, PEST++, GCP Compute Engine"
         ]
       },
       {
-        "title": "Interactive Monitoring Dashboards",
-        "date": "July 2024 - August 2026",
+        "title": "Mine Plan to Model Input Conversion",
+        "date": "July 2024 - May 2026",
         "bullets": [
-          "Developed web-based dashboards for groundwater monitoring data visualization and analysis",
-          "Built interactive tools for decision support during hydrogeological investigations",
-          "Deployed containerized applications to VPN-accessible servers for client access",
-          "Technologies: Python, Plotly, Dash, Docker, PostgreSQL"
+          "Automated conversion of transient 3D mine plans from non-native formats into MODFLOW 6 and MINEDW inputs",
+          "Reduced a weeks-long manual task to seconds",
+          "Technologies: Python, FloPy, MODFLOW 6, MINEDW"
         ]
       },
       {
-        "title": "Spatial-Temporal Data Processing Pipeline",
-        "date": "July 2024 - August 2026",
+        "title": "Monitoring Data Pipelines and Dashboards",
+        "date": "July 2024 - Present",
         "bullets": [
-          "Created scalable ETL pipelines for processing large monitoring datasets with spatial and temporal components",
-          "Integrated GIS data processing with time-series analysis for hydrogeological applications",
-          "Automated quality control checks and data validation workflows",
-          "Technologies: Python, Pandas, QGIS, GeoPandas"
+          "Scheduled ETL pipelines that validate and normalize groundwater-level, pumping, and water-quality data into a single source of truth for calibration and reporting",
+          "React/Plotly dashboards on GCP Cloud Run with IAP authentication, serving ~20 concurrent users across multiple firms",
+          "DuckDB/DuckLake lakehouse with in-database sensor transforms, served through FastAPI",
+          "Technologies: Python, SQL, Cloud SQL, DuckDB, DuckLake, FastAPI, React, Plotly, Pulumi, Docker"
         ]
       },
       {
-        "title": "FEFLOW Custom Plugins for Advanced Geological Modeling",
+        "title": "FEFLOW Plug-ins for Geological Modeling",
         "date": "November 2012 - April 2020",
         "bullets": [
-          "Architected and developed custom C++ plugins extending FEFLOW's core functionality for complex 3D geological modeling and adaptive mesh generation",
-          "Implemented GIS integration with shapefile import capabilities, including advanced Delaunay triangulation with constraint handling for geological boundaries and fault structures",
-          "Built automated mesh refinement algorithms that preserved geological layer boundaries while optimizing element quality for numerical stability",
-          "Enabled modeling of complex multi-layer aquifer systems, fault zones, and heterogeneous geological formations for water sourcing and resource assessment projects",
-          "Reduced model setup time from weeks to days by automating geological structure interpretation and mesh generation workflows",
-          "Technologies: C++, FEFLOW API, computational geometry algorithms, GIS data formats, object-oriented design patterns"
+          "C++ FEFLOW plug-ins for geological model construction and mesh generation",
+          "Shapefile import with constrained Delaunay triangulation honoring geological boundaries",
+          "Replaced spreadsheet workflows that took days with near-instant processing",
+          "Technologies: C++, FEFLOW API, computational geometry"
         ]
       }
     ],
     "personal": [
       {
-        "title": "Independent Work",
-        "date": "April 2020 - July 2024",
+        "title": "typefossil",
+        "date": "2026",
         "bullets": [
-          "Managed options portfolio full-time using theta decay strategies",
-          "Contributed to open-source multiplayer game server codebase"
+          "Recovers a working digital typeface from photographs of a printed book: segments letters, clusters them by sort, averages each cluster, fits Bézier outlines, and builds a .ttf",
+          "Source: github.com/adacovsk/typefossil",
+          "Technologies: Python"
         ]
       },
       {
-        "title": "Roguelike CRPG",
-        "date": "July 2024 - August 2026",
+        "title": "Roguelike CRPG (Rust/Bevy)",
+        "date": "November 2021 - Present",
         "bullets": [
-          "Designed and implemented complex game systems using Entity-Component-System (ECS) architecture in Rust/Bevy",
-          "Built procedural generation pipelines using Voronoi diagrams and Perlin noise for terrain, with AI pathfinding for NPCs",
+          "Entity-Component-System architecture with procedural terrain generation (Voronoi diagrams, Perlin noise) and NPC pathfinding",
           "Optimized system performance and scalability for large, dynamic game worlds",
-          "Technologies: Rust, Bevy game engine, procedural generation algorithms"
+          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server",
+          "Technologies: Rust, Bevy"
+        ]
+      },
+      {
+        "title": "Equity Options Trading",
+        "date": "April 2016 - Present",
+        "bullets": [
+          "Manage an options portfolio using theta-decay strategies, sizing positions and managing risk through volatility and Greeks analysis"
         ]
       }
     ]
