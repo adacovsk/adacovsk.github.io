@@ -125,7 +125,7 @@
         "FloPy",
         "FEFLOW",
         "MINEDW",
-        "PEST/PEST++"
+        "PEST++"
       ]
     },
     "certifications": [
