@@ -149,7 +149,7 @@
     "professional": [
       {
         "title": "Ensemble Calibration on GCP Spot Fleets",
-        "date": "July 2024 - May 2026",
+        "date": "March 2026 - May 2026",
         "bullets": [
           "Calibrated transient MODFLOW 6 models with PEST++ iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty",
           "Ran ensemble simulations on Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting run times from weeks to days",
