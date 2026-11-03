@@ -32,7 +32,7 @@
           "QA/QC geochemistry data for errors, gaps, and inconsistencies before use in analysis and reporting",
           "Design ETL pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
           "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
-          "Serve analytical results to project teams through FastAPI services and React front ends, containerized with Docker on VPN-accessible servers",
+          "Serve analytical results to project teams through FastAPI services and React front ends",
           "Maintain CI/CD pipelines with automated testing for analytical code and deployments"
         ]
       },
@@ -49,6 +49,7 @@
           "Designed scheduled ETL pipelines that ingest groundwater-level, pumping, and water-quality monitoring data from on-prem and cloud sources, validate and normalize it into Cloud SQL, and give model calibration and client reporting a single source of truth",
           "Structured pipelines so new wells, sites, and monitoring periods could be added without rework, keeping calibration inputs and reports consistent as datasets grew",
           "Delivered curated pipeline outputs through React/Plotly dashboards on GCP Cloud Run with IAP authentication, supporting ~20 concurrent users across multiple firms on a single project",
+          "Containerized applications with Docker for deployment to VPN-accessible servers",
           "Provisioned infrastructure as code with Pulumi and Docker, with CI/CD through GitHub Actions and Cloud Build and documentation published to AWS S3; unit tests guarded modeling scripts against regressions during refactoring"
         ]
       },
