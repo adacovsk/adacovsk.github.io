@@ -16,7 +16,11 @@
         "text": "LinkedIn",
         "url": "https://www.linkedin.com/in/adam-acovski-3625521a6"
       }
-    ]
+    ],
+    "email": {
+      "user": "adacovsk",
+      "domain": "gmail.com"
+    }
   },
   "resume": {
     "summary": "Data scientist and data engineer with nearly a decade of predictive modeling experience, specializing in Python/SQL and scalable data pipelines for environmental and groundwater problems. Builds calibrated predictive models with rigorous uncertainty quantification (PEST++, iterative ensemble smoothers) and the production systems behind them: ETL pipelines, lakehouse storage, APIs, cloud infrastructure, and CI/CD. Domain depth from mining and environmental consulting, including groundwater flow and contaminant transport modeling, dewatering assessments, and model calibration.",
