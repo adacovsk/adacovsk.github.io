@@ -176,22 +176,39 @@
     ],
     "personal": [
       {
+        "title": "bevy-rpg: Tactical CRPG (Rust/Bevy)",
+        "date": "November 2021 - Present",
+        "bullets": [
+          "Rules engine: 130+ ECS systems covering characters, ancestries, classes, feats, spells, conditions, degree-of-success combat, encumbrance, stealth, summoning, rest, and earning income",
+          "Living world: procedural terrain (Voronoi diagrams, Perlin noise), biomes, settlements, dungeons, and roads; caravans with their own economics, NPC routines and pathfinding, generated quests, and random encounters",
+          "Data-driven content: ~300 JSON content files with generated schemas, 40+ validation guards, and hot reload; no content identifiers hardcoded in Rust",
+          "Pipeline: deterministic asset builds (sprites, atlases, Tiled maps), GPU particle VFX with bevy_hanabi, and performance budgets checked against Chrome traces",
+          "Agent-run development: a team of AI agents (architect, planner, coordinator, tester) orchestrated through Paperclip, landing changes through a local verification gate with cost-budgeted CI behind it",
+          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server",
+          "Technologies: Rust, Bevy, bevy_ecs_tilemap, bevy_hanabi, Python, Paperclip"
+        ],
+        "private": true,
+        "summary": "An isometric tactical CRPG built on the ORC-licensed d20 ruleset: ~450k lines of Rust, ~9,300 tests, 18k+ commits since July 2025."
+      },
+      {
         "title": "typefossil",
         "date": "2026",
         "bullets": [
           "Recovers a working digital typeface from photographs of a printed book: segments letters, clusters them by sort, averages each cluster, fits Bézier outlines, and builds a .ttf",
-          "Source: github.com/adacovsk/typefossil",
           "Technologies: Python"
-        ]
+        ],
+        "url": "https://github.com/adacovsk/typefossil",
+        "summary": "Recovers a working digital typeface from photographs of a printed book by averaging hundreds of impressions of each sort."
       },
       {
-        "title": "Roguelike CRPG (Rust/Bevy)",
-        "date": "November 2021 - Present",
+        "title": "python-experiments",
+        "date": "November 2025 - Present",
+        "url": "https://github.com/adacovsk/python-experiments",
+        "summary": "ML odds and ends: Real-ESRGAN video upscaling and FLUX-painted game icons and portraits.",
         "bullets": [
-          "Entity-Component-System architecture with procedural terrain generation (Voronoi diagrams, Perlin noise) and NPC pathfinding",
-          "Optimized system performance and scalability for large, dynamic game worlds",
-          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server",
-          "Technologies: Rust, Bevy"
+          "4x super-resolution for images and video with Real-ESRGAN, preserving audio",
+          "Game icons and portraits painted by FLUX.1 [schnell] in an antique-engraving style, gradient-mapped onto a type-coded palette",
+          "Technologies: Python, PyTorch, stable-diffusion.cpp, Cloudflare Workers AI"
         ]
       },
       {

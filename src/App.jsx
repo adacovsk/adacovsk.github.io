@@ -179,8 +179,14 @@ function Projects() {
         <h2>Personal Projects</h2>
         {content.projects.personal.map((project, i) => (
           <div key={i} className="experience-item">
-            <h3>{project.title}</h3>
+            <h3>
+              {project.url
+                ? <a href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                : project.title}
+              {project.private && ' (private)'}
+            </h3>
             <p className="date">{project.date}</p>
+            {project.summary && <p>{project.summary}</p>}
             <ul>
               {project.bullets.map((bullet, j) => (
                 <li key={j}>{bullet}</li>
