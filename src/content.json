@@ -32,7 +32,7 @@
           "QA/QC geochemistry data for errors, gaps, and inconsistencies before use in analysis and reporting",
           "Design ETL and ELT pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
           "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
-          "Serve analytical results to project teams through FastAPI services and React front ends",
+          "Serve analytical results to project teams through FastAPI services and React front ends, containerized with Docker on VPN-accessible servers",
           "Maintain CI/CD pipelines with automated testing for analytical code and deployments"
         ]
       },
@@ -49,7 +49,7 @@
           "Designed scheduled ETL pipelines that ingest groundwater-level, pumping, and water-quality monitoring data from on-prem and cloud sources, validate and normalize it into Cloud SQL, and give model calibration and client reporting a single source of truth",
           "Structured pipelines so new wells, sites, and monitoring periods could be added without rework, keeping calibration inputs and reports consistent as datasets grew",
           "Delivered curated pipeline outputs through React/Plotly dashboards on GCP Cloud Run with IAP authentication, supporting ~20 concurrent users across multiple firms on a single project",
-          "Provisioned infrastructure as code with Pulumi and Docker, with CI/CD through GitHub Actions and Cloud Build and documentation published to AWS S3"
+          "Provisioned infrastructure as code with Pulumi and Docker, with CI/CD through GitHub Actions and Cloud Build and documentation published to AWS S3; unit tests guarded modeling scripts against regressions during refactoring"
         ]
       },
       {
@@ -60,7 +60,7 @@
         "bullets": [
           "Calibrated ~20 numerical groundwater models with PEST, estimating parameters by fitting simulations to observed field data and validating model performance before use in forecasting",
           "Optimized brine-disposal well-field configurations for the Winnipeg-Deadwood formation, using analytical and numerical models to forecast injection pressures and keep them below the fracture gradient",
-          "Developed C++ FEFLOW plug-ins for geological model construction and mesh generation, including shapefile import with constrained Delaunay triangulation, replacing spreadsheet workflows that took days with near-instant processing",
+          "Developed C++ FEFLOW plug-ins for geological model construction and mesh generation, including shapefile import with constrained Delaunay triangulation and mesh refinement that preserved geological layer boundaries, replacing spreadsheet workflows that took days with near-instant processing",
           "Forecast long-term contaminant migration for uranium mine decommissioning using particle-tracking simulations, informing remediation strategies",
           "Translated model forecasts into technical reports for Environmental Impact Assessments (EIAs)",
           "Built and maintained HPC workstations for simulation workloads and managed hardware and software procurement"
@@ -96,6 +96,7 @@
         "pandas",
         "NumPy",
         "SciPy",
+        "GeoPandas",
         "SQL",
         "Rust",
         "C++",
@@ -107,10 +108,13 @@
         "Pulumi",
         "Docker",
         "GitHub Actions",
-        "Cloud Build"
+        "Cloud Build",
+        "pytest"
       ],
       "Visualization": [
         "Plotly",
+        "Dash",
+        "Matplotlib",
         "React",
         "Three.js",
         "PyVista",
@@ -156,7 +160,7 @@
           "Scheduled ETL pipelines that validate and normalize groundwater-level, pumping, and water-quality data into a single source of truth for calibration and reporting",
           "React/Plotly dashboards on GCP Cloud Run with IAP authentication, serving ~20 concurrent users across multiple firms",
           "DuckDB/DuckLake lakehouse with in-database sensor transforms, served through FastAPI",
-          "Technologies: Python, SQL, Cloud SQL, DuckDB, DuckLake, FastAPI, React, Plotly, Pulumi, Docker"
+          "Technologies: Python, SQL, Cloud SQL, DuckDB, DuckLake, FastAPI, React, Plotly, Dash, Pulumi, Docker"
         ]
       },
       {
@@ -165,6 +169,7 @@
         "bullets": [
           "C++ FEFLOW plug-ins for geological model construction and mesh generation",
           "Shapefile import with constrained Delaunay triangulation honoring geological boundaries",
+          "Mesh refinement that preserved geological layer boundaries for multi-layer aquifer systems and fault zones",
           "Replaced spreadsheet workflows that took days with near-instant processing",
           "Technologies: C++, FEFLOW API, computational geometry"
         ]
