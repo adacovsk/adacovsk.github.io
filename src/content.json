@@ -60,7 +60,7 @@
         "bullets": [
           "Calibrated ~20 numerical groundwater models with PEST, estimating parameters by fitting simulations to observed field data and validating model performance before use in forecasting",
           "Optimized brine-disposal well-field configurations for the Winnipeg-Deadwood formation, using analytical and numerical models to forecast injection pressures and keep them below the fracture gradient",
-          "Developed C++ FEFLOW plug-ins for geological model construction and mesh generation, including shapefile import with constrained Delaunay triangulation and mesh refinement that preserved geological layer boundaries, replacing spreadsheet workflows that took days with near-instant processing",
+          "Developed C++ FEFLOW plug-ins for geological model construction and mesh generation, including constrained Delaunay triangulation and mesh refinement that preserved geological layer boundaries, cutting model setup time from weeks to days; shapefile import replaced spreadsheet workflows that took days with near-instant processing",
           "Forecast long-term contaminant migration for uranium mine decommissioning using particle-tracking simulations, informing remediation strategies",
           "Translated model forecasts into technical reports for Environmental Impact Assessments (EIAs)",
           "Built and maintained HPC workstations for simulation workloads and managed hardware and software procurement"
@@ -170,7 +170,7 @@
           "C++ FEFLOW plug-ins for geological model construction and mesh generation",
           "Shapefile import with constrained Delaunay triangulation honoring geological boundaries",
           "Mesh refinement that preserved geological layer boundaries for multi-layer aquifer systems and fault zones",
-          "Replaced spreadsheet workflows that took days with near-instant processing",
+          "Cut model setup time from weeks to days; shapefile import replaced spreadsheet workflows that took days with near-instant processing",
           "Technologies: C++, FEFLOW API, computational geometry"
         ]
       }
