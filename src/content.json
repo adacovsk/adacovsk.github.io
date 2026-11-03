@@ -29,7 +29,6 @@
         "bullets": [
           "Develop conceptual and numerical groundwater models that predict mine-site flow conditions for engineering decisions",
           "Work with exploration data in Leapfrog to inform conceptual hydrogeological models",
-          "QA/QC geochemistry data for errors, gaps, and inconsistencies before use in analysis and reporting",
           "Design ETL pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
           "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
           "Serve analytical results to project teams through FastAPI services and React front ends",
@@ -45,7 +44,7 @@
           "Calibrated transient groundwater models with FloPy and PEST++, using iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty quantification",
           "Ran high-throughput ensemble simulations on GCP Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting ensemble run times from weeks to days",
           "Automated conversion of transient 3D mine plans from non-native formats into MODFLOW 6 and MINEDW inputs, reducing a weeks-long manual task to seconds",
-          "Performed QA/QC on geochemistry and well data and delivered geochemistry visualizations, such as Piper plots, through project dashboards",
+          "Performed QA/QC on geochemistry and well data for errors, gaps, and inconsistencies before use in analysis and reporting, and delivered geochemistry visualizations, such as Piper plots, through project dashboards",
           "Designed scheduled ETL pipelines that ingest groundwater-level, pumping, and water-quality monitoring data from on-prem and cloud sources, validate and normalize it into Cloud SQL, and give model calibration and client reporting a single source of truth",
           "Structured pipelines so new wells, sites, and monitoring periods could be added without rework, keeping calibration inputs and reports consistent as datasets grew",
           "Delivered curated pipeline outputs through React/Plotly dashboards on GCP Cloud Run with IAP authentication, supporting ~20 concurrent users across multiple firms on a single project",
