@@ -29,11 +29,9 @@
         "bullets": [
           "Develop conceptual and numerical groundwater models that predict mine-site flow conditions for engineering decisions",
           "Work with exploration data in Leapfrog to inform conceptual hydrogeological models",
-          "QA/QC geochemistry data for errors, gaps, and inconsistencies before use in analysis and reporting",
           "Design ETL pipelines on DuckDB and DuckLake that store monitoring, field, and model-output time series in normalized tables keyed by sensor and timestamp, with analysis-ready views for modeling and reporting",
           "Transform raw sensor data in-database, such as converting vibrating wire piezometer readings into water levels, so derived values stay traceable to source readings",
-          "Serve analytical results to project teams through FastAPI services and React front ends, containerized with Docker on VPN-accessible servers",
-          "Maintain CI/CD pipelines with automated testing for analytical code and deployments"
+          "Serve analytical results to project teams through FastAPI services and React front ends"
         ]
       },
       {
@@ -45,10 +43,11 @@
           "Calibrated transient groundwater models with FloPy and PEST++, using iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty quantification",
           "Ran high-throughput ensemble simulations on GCP Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting ensemble run times from weeks to days",
           "Automated conversion of transient 3D mine plans from non-native formats into MODFLOW 6 and MINEDW inputs, reducing a weeks-long manual task to seconds",
-          "Performed QA/QC on geochemistry and well data and delivered geochemistry visualizations, such as Piper plots, through project dashboards",
+          "Performed QA/QC on geochemistry and well data for errors, gaps, and inconsistencies before use in analysis and reporting, and delivered geochemistry visualizations, such as Piper plots, through project dashboards",
           "Designed scheduled ETL pipelines that ingest groundwater-level, pumping, and water-quality monitoring data from on-prem and cloud sources, validate and normalize it into Cloud SQL, and give model calibration and client reporting a single source of truth",
           "Structured pipelines so new wells, sites, and monitoring periods could be added without rework, keeping calibration inputs and reports consistent as datasets grew",
           "Delivered curated pipeline outputs through React/Plotly dashboards on GCP Cloud Run with IAP authentication, supporting ~20 concurrent users across multiple firms on a single project",
+          "Containerized applications with Docker for deployment to VPN-accessible servers",
           "Provisioned infrastructure as code with Pulumi and Docker, with CI/CD through GitHub Actions and Cloud Build and documentation published to AWS S3; unit tests guarded modeling scripts against regressions during refactoring"
         ]
       },
@@ -75,6 +74,9 @@
     },
     "skills": {
       "Modeling & Statistics": [
+        "Groundwater flow and contaminant transport",
+        "Unsaturated flow",
+        "Mine dewatering",
         "Bayesian inverse modeling",
         "Iterative ensemble smoothers (IES)",
         "Uncertainty quantification",
@@ -104,12 +106,23 @@
       ],
       "Cloud & DevOps": [
         "GCP",
+        "Cloud Run",
+        "Cloud SQL",
+        "Cloud Storage",
+        "Eventarc",
+        "Compute Engine spot fleets",
+        "Managed Instance Groups",
         "AWS",
         "Pulumi",
         "Docker",
         "GitHub Actions",
         "Cloud Build",
         "pytest"
+      ],
+      "AI (personal projects)": [
+        "AI agent orchestration (graph workflows, Paperclip)",
+        "Gemini vision extraction of images and technical PDFs into structured data, with human-in-the-loop review",
+        "Automated technical reporting"
       ],
       "Visualization": [
         "Plotly",
@@ -125,7 +138,7 @@
         "FloPy",
         "FEFLOW",
         "MINEDW",
-        "PEST/PEST++"
+        "PEST++"
       ]
     },
     "certifications": [
@@ -136,7 +149,7 @@
     "professional": [
       {
         "title": "Ensemble Calibration on GCP Spot Fleets",
-        "date": "July 2024 - May 2026",
+        "date": "March 2026 - May 2026",
         "bullets": [
           "Calibrated transient MODFLOW 6 models with PEST++ iterative ensemble smoothers for Bayesian parameter estimation and predictive uncertainty",
           "Ran ensemble simulations on Compute Engine spot fleets orchestrated with Managed Instance Groups, cutting run times from weeks to days",
@@ -145,7 +158,7 @@
       },
       {
         "title": "Mine Plan to Model Input Conversion",
-        "date": "July 2024 - May 2026",
+        "date": "March 2025",
         "bullets": [
           "Automated conversion of transient 3D mine plans from non-native formats into MODFLOW 6 and MINEDW inputs",
           "Reduced a weeks-long manual task to seconds",
@@ -189,6 +202,16 @@
         ],
         "private": true,
         "summary": "An isometric tactical CRPG built on the ORC-licensed d20 ruleset: ~450k lines of Rust, ~9,300 tests, 18k+ commits since July 2025."
+      },
+      {
+        "title": "Image-to-Structured-Data Extraction",
+        "date": "Hobby project",
+        "summary": "Turns images and scanned technical documents into structured data with Gemini vision, with a human reviewing and correcting each extraction.",
+        "bullets": [
+          "Gemini vision model extracts fields from images and technical PDFs into structured records",
+          "Human-in-the-loop review step confirms or corrects every extraction before it is kept",
+          "Technologies: Python, Gemini"
+        ]
       },
       {
         "title": "typefossil",
