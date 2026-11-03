@@ -75,6 +75,9 @@
     },
     "skills": {
       "Modeling & Statistics": [
+        "Groundwater flow and contaminant transport",
+        "Unsaturated flow",
+        "Mine dewatering",
         "Bayesian inverse modeling",
         "Iterative ensemble smoothers (IES)",
         "Uncertainty quantification",
@@ -104,12 +107,23 @@
       ],
       "Cloud & DevOps": [
         "GCP",
+        "Cloud Run",
+        "Cloud SQL",
+        "Cloud Storage",
+        "Eventarc",
+        "Compute Engine spot fleets",
+        "Managed Instance Groups",
         "AWS",
         "Pulumi",
         "Docker",
         "GitHub Actions",
         "Cloud Build",
         "pytest"
+      ],
+      "AI & Document Intelligence": [
+        "AI agent orchestration (graph workflows)",
+        "Structured and unstructured extraction from technical PDFs, field reports, and calibration sheets",
+        "Automated technical reporting"
       ],
       "Visualization": [
         "Plotly",
