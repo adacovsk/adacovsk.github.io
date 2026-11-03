@@ -120,9 +120,9 @@
         "Cloud Build",
         "pytest"
       ],
-      "AI & Document Intelligence": [
-        "AI agent orchestration (graph workflows)",
-        "Structured and unstructured extraction from technical PDFs, field reports, and calibration sheets",
+      "AI (personal projects)": [
+        "AI agent orchestration (graph workflows, Paperclip)",
+        "Gemini vision extraction of images and technical PDFs into structured data, with human-in-the-loop review",
         "Automated technical reporting"
       ],
       "Visualization": [
@@ -203,6 +203,16 @@
         ],
         "private": true,
         "summary": "An isometric tactical CRPG built on the ORC-licensed d20 ruleset: ~450k lines of Rust, ~9,300 tests, 18k+ commits since July 2025."
+      },
+      {
+        "title": "Image-to-Structured-Data Extraction",
+        "date": "Hobby project",
+        "summary": "Turns images and scanned technical documents into structured data with Gemini vision, with a human reviewing and correcting each extraction.",
+        "bullets": [
+          "Gemini vision model extracts fields from images and technical PDFs into structured records",
+          "Human-in-the-loop review step confirms or corrects every extraction before it is kept",
+          "Technologies: Python, Gemini"
+        ]
       },
       {
         "title": "typefossil",
