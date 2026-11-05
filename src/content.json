@@ -201,11 +201,16 @@
           "Data-driven content: ~300 JSON content files with generated schemas, 40+ validation guards, and hot reload; no content identifiers hardcoded in Rust",
           "Pipeline: deterministic asset builds (sprites, atlases, Tiled maps), GPU particle VFX with bevy_hanabi, and performance budgets checked against Chrome traces",
           "Agent-run development: a team of AI agents (architect, planner, coordinator, tester) orchestrated through Paperclip, landing changes through a local verification gate with cost-budgeted CI behind it",
-          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server",
           "Technologies: Rust, Bevy, bevy_ecs_tilemap, bevy_hanabi, Python, Paperclip"
         ],
         "private": true,
         "summary": "An isometric tactical CRPG built on the ORC-licensed d20 ruleset: ~450k lines of Rust, ~9,300 tests, 18k+ commits since July 2025."
+      },
+      {
+        "title": "Open-Source Contributions",
+        "bullets": [
+          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server"
+        ]
       },
       {
         "title": "Image-to-Structured-Data Extraction",
