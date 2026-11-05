@@ -208,9 +208,8 @@
       },
       {
         "title": "Open-Source Contributions",
-        "bullets": [
-          "Contributed features and core-system improvements to open-source projects, including a multiplayer game server"
-        ]
+        "summary": "Contributed features and core-system improvements to open-source projects, including a multiplayer game server.",
+        "bullets": []
       },
       {
         "title": "Image-to-Structured-Data Extraction",
