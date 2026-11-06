@@ -210,11 +210,10 @@
         "title": "vgstation13: Open-Source Multiplayer Game Server",
         "date": "December 2021 - July 2025",
         "url": "https://github.com/vgstation-coders/vgstation13/pulls?q=is%3Apr+author%3Aadacovsk+is%3Amerged",
-        "summary": "189 merged pull requests to a long-running open-source Space Station 13 server: performance work, core-system refactors, and a new station map.",
+        "summary": "189 merged pull requests to a long-running open-source Space Station 13 server.",
         "bullets": [
-          "Performance and stability: round-start initialization speedups, profiler-driven fixes, and runtime-error cleanup across mobs, explosions, sound, and hydroponics",
-          "Core systems: rewrote round voting with multiple voting methods; refactored hydroponics, telepathy, invisibility, and the end-of-round scoreboard; reworked lighting planes and darkness",
-          "Content: designed and shipped a new station map (Line Station), a hologram projector device, and balance passes on antagonist roles",
+          "Performance, stability, and refactoring work on core server systems",
+          "New gameplay features and a new station map",
           "Technologies: DM (BYOND), Git"
         ]
       },
