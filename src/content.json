@@ -213,7 +213,7 @@
         "summary": "189 merged pull requests to a long-running open-source Space Station 13 server.",
         "bullets": [
           "Performance, stability, and refactoring work on core server systems",
-          "New gameplay features and a new station map",
+          "New gameplay features",
           "Technologies: DM (BYOND), Git"
         ]
       },
