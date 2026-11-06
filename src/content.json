@@ -207,9 +207,16 @@
         "summary": "An isometric tactical CRPG built on the ORC-licensed d20 ruleset: ~450k lines of Rust, ~9,300 tests, 18k+ commits since July 2025."
       },
       {
-        "title": "Open-Source Contributions",
-        "summary": "Contributed features and core-system improvements to open-source projects, including a multiplayer game server.",
-        "bullets": []
+        "title": "vgstation13: Open-Source Multiplayer Game Server",
+        "date": "December 2021 - July 2025",
+        "url": "https://github.com/vgstation-coders/vgstation13/pulls?q=is%3Apr+author%3Aadacovsk+is%3Amerged",
+        "summary": "189 merged pull requests to a long-running open-source Space Station 13 server: performance work, core-system refactors, and a new station map.",
+        "bullets": [
+          "Performance and stability: round-start initialization speedups, profiler-driven fixes, and runtime-error cleanup across mobs, explosions, sound, and hydroponics",
+          "Core systems: rewrote round voting with multiple voting methods; refactored hydroponics, telepathy, invisibility, and the end-of-round scoreboard; reworked lighting planes and darkness",
+          "Content: designed and shipped a new station map (Line Station), a hologram projector device, and balance passes on antagonist roles",
+          "Technologies: DM (BYOND), Git"
+        ]
       },
       {
         "title": "Image-to-Structured-Data Extraction",
